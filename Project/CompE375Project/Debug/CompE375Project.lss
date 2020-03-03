@@ -1,0 +1,950 @@
+
+CompE375Project.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000114  00800100  000004a6  0000053a  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000004a6  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000006  00800214  00800214  0000064e  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  0000064e  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000680  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000040  00000000  00000000  000006c0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000005b5  00000000  00000000  00000700  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000217  00000000  00000000  00000cb5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000070a  00000000  00000000  00000ecc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000a4  00000000  00000000  000015d8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000fc21  00000000  00000000  0000167c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000051a  00000000  00000000  0001129d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000078  00000000  00000000  000117b7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_macro  000004e7  00000000  00000000  0001182f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	59 c0       	rjmp	.+178    	; 0xb4 <__ctors_end>
+   2:	00 00       	nop
+   4:	72 c0       	rjmp	.+228    	; 0xea <__bad_interrupt>
+   6:	00 00       	nop
+   8:	70 c0       	rjmp	.+224    	; 0xea <__bad_interrupt>
+   a:	00 00       	nop
+   c:	6e c0       	rjmp	.+220    	; 0xea <__bad_interrupt>
+   e:	00 00       	nop
+  10:	6c c0       	rjmp	.+216    	; 0xea <__bad_interrupt>
+  12:	00 00       	nop
+  14:	6a c0       	rjmp	.+212    	; 0xea <__bad_interrupt>
+  16:	00 00       	nop
+  18:	68 c0       	rjmp	.+208    	; 0xea <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	66 c0       	rjmp	.+204    	; 0xea <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	64 c0       	rjmp	.+200    	; 0xea <__bad_interrupt>
+  22:	00 00       	nop
+  24:	62 c0       	rjmp	.+196    	; 0xea <__bad_interrupt>
+  26:	00 00       	nop
+  28:	60 c0       	rjmp	.+192    	; 0xea <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	5e c0       	rjmp	.+188    	; 0xea <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	5c c0       	rjmp	.+184    	; 0xea <__bad_interrupt>
+  32:	00 00       	nop
+  34:	5a c0       	rjmp	.+180    	; 0xea <__bad_interrupt>
+  36:	00 00       	nop
+  38:	58 c0       	rjmp	.+176    	; 0xea <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	56 c0       	rjmp	.+172    	; 0xea <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	54 c0       	rjmp	.+168    	; 0xea <__bad_interrupt>
+  42:	00 00       	nop
+  44:	52 c0       	rjmp	.+164    	; 0xea <__bad_interrupt>
+  46:	00 00       	nop
+  48:	50 c0       	rjmp	.+160    	; 0xea <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	4e c0       	rjmp	.+156    	; 0xea <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	4c c0       	rjmp	.+152    	; 0xea <__bad_interrupt>
+  52:	00 00       	nop
+  54:	4a c0       	rjmp	.+148    	; 0xea <__bad_interrupt>
+  56:	00 00       	nop
+  58:	48 c0       	rjmp	.+144    	; 0xea <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	46 c0       	rjmp	.+140    	; 0xea <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	44 c0       	rjmp	.+136    	; 0xea <__bad_interrupt>
+  62:	00 00       	nop
+  64:	42 c0       	rjmp	.+132    	; 0xea <__bad_interrupt>
+  66:	00 00       	nop
+  68:	40 c0       	rjmp	.+128    	; 0xea <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	3e c0       	rjmp	.+124    	; 0xea <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	3c c0       	rjmp	.+120    	; 0xea <__bad_interrupt>
+  72:	00 00       	nop
+  74:	3a c0       	rjmp	.+116    	; 0xea <__bad_interrupt>
+  76:	00 00       	nop
+  78:	38 c0       	rjmp	.+112    	; 0xea <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	36 c0       	rjmp	.+108    	; 0xea <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	34 c0       	rjmp	.+104    	; 0xea <__bad_interrupt>
+  82:	00 00       	nop
+  84:	32 c0       	rjmp	.+100    	; 0xea <__bad_interrupt>
+  86:	00 00       	nop
+  88:	30 c0       	rjmp	.+96     	; 0xea <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	2e c0       	rjmp	.+92     	; 0xea <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	2c c0       	rjmp	.+88     	; 0xea <__bad_interrupt>
+  92:	00 00       	nop
+  94:	2a c0       	rjmp	.+84     	; 0xea <__bad_interrupt>
+  96:	00 00       	nop
+  98:	28 c0       	rjmp	.+80     	; 0xea <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	26 c0       	rjmp	.+76     	; 0xea <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	24 c0       	rjmp	.+72     	; 0xea <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	22 c0       	rjmp	.+68     	; 0xea <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	20 c0       	rjmp	.+64     	; 0xea <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	1e c0       	rjmp	.+60     	; 0xea <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	1c c0       	rjmp	.+56     	; 0xea <__bad_interrupt>
+	...
+
+000000b4 <__ctors_end>:
+  b4:	11 24       	eor	r1, r1
+  b6:	1f be       	out	0x3f, r1	; 63
+  b8:	cf ef       	ldi	r28, 0xFF	; 255
+  ba:	d8 e0       	ldi	r29, 0x08	; 8
+  bc:	de bf       	out	0x3e, r29	; 62
+  be:	cd bf       	out	0x3d, r28	; 61
+
+000000c0 <__do_copy_data>:
+  c0:	12 e0       	ldi	r17, 0x02	; 2
+  c2:	a0 e0       	ldi	r26, 0x00	; 0
+  c4:	b1 e0       	ldi	r27, 0x01	; 1
+  c6:	e6 ea       	ldi	r30, 0xA6	; 166
+  c8:	f4 e0       	ldi	r31, 0x04	; 4
+  ca:	02 c0       	rjmp	.+4      	; 0xd0 <__do_copy_data+0x10>
+  cc:	05 90       	lpm	r0, Z+
+  ce:	0d 92       	st	X+, r0
+  d0:	a4 31       	cpi	r26, 0x14	; 20
+  d2:	b1 07       	cpc	r27, r17
+  d4:	d9 f7       	brne	.-10     	; 0xcc <__do_copy_data+0xc>
+
+000000d6 <__do_clear_bss>:
+  d6:	22 e0       	ldi	r18, 0x02	; 2
+  d8:	a4 e1       	ldi	r26, 0x14	; 20
+  da:	b2 e0       	ldi	r27, 0x02	; 2
+  dc:	01 c0       	rjmp	.+2      	; 0xe0 <.do_clear_bss_start>
+
+000000de <.do_clear_bss_loop>:
+  de:	1d 92       	st	X+, r1
+
+000000e0 <.do_clear_bss_start>:
+  e0:	aa 31       	cpi	r26, 0x1A	; 26
+  e2:	b2 07       	cpc	r27, r18
+  e4:	e1 f7       	brne	.-8      	; 0xde <.do_clear_bss_loop>
+  e6:	89 d0       	rcall	.+274    	; 0x1fa <main>
+  e8:	dc c1       	rjmp	.+952    	; 0x4a2 <_exit>
+
+000000ea <__bad_interrupt>:
+  ea:	8a cf       	rjmp	.-236    	; 0x0 <__vectors>
+
+000000ec <readKey>:
+		}
+	}
+
+}
+
+int readKey(){
+  ec:	af 92       	push	r10
+  ee:	bf 92       	push	r11
+  f0:	cf 92       	push	r12
+  f2:	df 92       	push	r13
+  f4:	ef 92       	push	r14
+  f6:	ff 92       	push	r15
+  f8:	0f 93       	push	r16
+  fa:	1f 93       	push	r17
+  fc:	cf 93       	push	r28
+  fe:	df 93       	push	r29
+
+	
+	//DDRD &= (~(1<<DDRD7))&(~(1 << DDRD6))&(~(1 << DDRD5))|(~(1 << DDRD4));
+	//PORTD |= 0xF0; //rows will be inputs, set pull-up resistors
+
+	for(i = 0; i < 4; i++){
+ 100:	a0 e0       	ldi	r26, 0x00	; 0
+ 102:	b0 e0       	ldi	r27, 0x00	; 0
+		//set all pins to input, high-z state
+		DDRB |= (1 << i); //set the pin for the particular, individual column as output
+ 104:	ee 24       	eor	r14, r14
+ 106:	e3 94       	inc	r14
+ 108:	f1 2c       	mov	r15, r1
+ 10a:	aa 24       	eor	r10, r10
+ 10c:	aa 94       	dec	r10
+ 10e:	bb 24       	eor	r11, r11
+ 110:	ba 94       	dec	r11
+ 112:	c1 2c       	mov	r12, r1
+ 114:	d1 2c       	mov	r13, r1
+		for(j = -1; j < 4; j++){
+			if (j != -1){
+				if(!(PIND & (0x10 << j))){ //check if row/col combination is pressed
+ 116:	c0 e1       	ldi	r28, 0x10	; 16
+ 118:	d0 e0       	ldi	r29, 0x00	; 0
+	//DDRD &= (~(1<<DDRD7))&(~(1 << DDRD6))&(~(1 << DDRD5))|(~(1 << DDRD4));
+	//PORTD |= 0xF0; //rows will be inputs, set pull-up resistors
+
+	for(i = 0; i < 4; i++){
+		//set all pins to input, high-z state
+		DDRB |= (1 << i); //set the pin for the particular, individual column as output
+ 11a:	84 b1       	in	r24, 0x04	; 4
+ 11c:	87 01       	movw	r16, r14
+ 11e:	0a 2e       	mov	r0, r26
+ 120:	02 c0       	rjmp	.+4      	; 0x126 <readKey+0x3a>
+ 122:	00 0f       	add	r16, r16
+ 124:	11 1f       	adc	r17, r17
+ 126:	0a 94       	dec	r0
+ 128:	e2 f7       	brpl	.-8      	; 0x122 <readKey+0x36>
+ 12a:	80 2b       	or	r24, r16
+ 12c:	84 b9       	out	0x04, r24	; 4
+ 12e:	4a 2d       	mov	r20, r10
+ 130:	5b 2d       	mov	r21, r11
+ 132:	6c 2d       	mov	r22, r12
+ 134:	7d 2d       	mov	r23, r13
+ 136:	04 c0       	rjmp	.+8      	; 0x140 <readKey+0x54>
+ 138:	6f 5f       	subi	r22, 0xFF	; 255
+ 13a:	7f 4f       	sbci	r23, 0xFF	; 255
+ 13c:	4f 5f       	subi	r20, 0xFF	; 255
+ 13e:	5f 4f       	sbci	r21, 0xFF	; 255
+ 140:	ca 01       	movw	r24, r20
+		for(j = -1; j < 4; j++){
+			if (j != -1){
+ 142:	4f 3f       	cpi	r20, 0xFF	; 255
+ 144:	2f ef       	ldi	r18, 0xFF	; 255
+ 146:	52 07       	cpc	r21, r18
+ 148:	b9 f3       	breq	.-18     	; 0x138 <readKey+0x4c>
+				if(!(PIND & (0x10 << j))){ //check if row/col combination is pressed
+ 14a:	29 b1       	in	r18, 0x09	; 9
+ 14c:	fe 01       	movw	r30, r28
+ 14e:	04 2e       	mov	r0, r20
+ 150:	02 c0       	rjmp	.+4      	; 0x156 <readKey+0x6a>
+ 152:	ee 0f       	add	r30, r30
+ 154:	ff 1f       	adc	r31, r31
+ 156:	0a 94       	dec	r0
+ 158:	e2 f7       	brpl	.-8      	; 0x152 <readKey+0x66>
+ 15a:	30 e0       	ldi	r19, 0x00	; 0
+ 15c:	2e 23       	and	r18, r30
+ 15e:	3f 23       	and	r19, r31
+ 160:	23 2b       	or	r18, r19
+ 162:	89 f4       	brne	.+34     	; 0x186 <readKey+0x9a>
+					
+					while(!(PIND & (0x10 << j)));
+ 164:	29 b1       	in	r18, 0x09	; 9
+ 166:	30 e0       	ldi	r19, 0x00	; 0
+ 168:	2e 23       	and	r18, r30
+ 16a:	3f 23       	and	r19, r31
+ 16c:	23 2b       	or	r18, r19
+ 16e:	d1 f3       	breq	.-12     	; 0x164 <readKey+0x78>
+					Counter = 0;
+ 170:	10 92 15 02 	sts	0x0215, r1	; 0x800215 <__data_end+0x1>
+ 174:	10 92 14 02 	sts	0x0214, r1	; 0x800214 <__data_end>
+					return ((j*4)+i); //return value of row/col combo (0 - 15)
+ 178:	88 0f       	add	r24, r24
+ 17a:	99 1f       	adc	r25, r25
+ 17c:	88 0f       	add	r24, r24
+ 17e:	99 1f       	adc	r25, r25
+ 180:	8a 0f       	add	r24, r26
+ 182:	9b 1f       	adc	r25, r27
+ 184:	0e c0       	rjmp	.+28     	; 0x1a2 <readKey+0xb6>
+	//PORTD |= 0xF0; //rows will be inputs, set pull-up resistors
+
+	for(i = 0; i < 4; i++){
+		//set all pins to input, high-z state
+		DDRB |= (1 << i); //set the pin for the particular, individual column as output
+		for(j = -1; j < 4; j++){
+ 186:	64 30       	cpi	r22, 0x04	; 4
+ 188:	71 05       	cpc	r23, r1
+ 18a:	b4 f2       	brlt	.-84     	; 0x138 <readKey+0x4c>
+					Counter = 0;
+					return ((j*4)+i); //return value of row/col combo (0 - 15)
+				}
+			}
+		}
+		DDRB &= ~(1 << i);
+ 18c:	84 b1       	in	r24, 0x04	; 4
+ 18e:	00 95       	com	r16
+ 190:	08 23       	and	r16, r24
+ 192:	04 b9       	out	0x04, r16	; 4
+
+	
+	//DDRD &= (~(1<<DDRD7))&(~(1 << DDRD6))&(~(1 << DDRD5))|(~(1 << DDRD4));
+	//PORTD |= 0xF0; //rows will be inputs, set pull-up resistors
+
+	for(i = 0; i < 4; i++){
+ 194:	11 96       	adiw	r26, 0x01	; 1
+ 196:	a4 30       	cpi	r26, 0x04	; 4
+ 198:	b1 05       	cpc	r27, r1
+ 19a:	09 f0       	breq	.+2      	; 0x19e <readKey+0xb2>
+ 19c:	be cf       	rjmp	.-132    	; 0x11a <readKey+0x2e>
+				}
+			}
+		}
+		DDRB &= ~(1 << i);
+	}
+	return 16; //return 16 if no switch was pressed
+ 19e:	80 e1       	ldi	r24, 0x10	; 16
+ 1a0:	90 e0       	ldi	r25, 0x00	; 0
+
+}
+ 1a2:	df 91       	pop	r29
+ 1a4:	cf 91       	pop	r28
+ 1a6:	1f 91       	pop	r17
+ 1a8:	0f 91       	pop	r16
+ 1aa:	ff 90       	pop	r15
+ 1ac:	ef 90       	pop	r14
+ 1ae:	df 90       	pop	r13
+ 1b0:	cf 90       	pop	r12
+ 1b2:	bf 90       	pop	r11
+ 1b4:	af 90       	pop	r10
+ 1b6:	08 95       	ret
+
+000001b8 <transmit>:
+}
+
+//function transmit
+void transmit(char a){
+	//wait for incoming bit
+	while(!(UCSR0A & 0x20));
+ 1b8:	e0 ec       	ldi	r30, 0xC0	; 192
+ 1ba:	f0 e0       	ldi	r31, 0x00	; 0
+ 1bc:	90 81       	ld	r25, Z
+ 1be:	95 ff       	sbrs	r25, 5
+ 1c0:	fd cf       	rjmp	.-6      	; 0x1bc <transmit+0x4>
+
+	//transmit char
+	UDR0 = a;
+ 1c2:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7e00c6>
+ 1c6:	08 95       	ret
+
+000001c8 <transmitString>:
+	return 16; //return 16 if no switch was pressed
+
+}
+
+//function transmit
+void transmitString(char *a){
+ 1c8:	cf 93       	push	r28
+ 1ca:	df 93       	push	r29
+ 1cc:	ec 01       	movw	r28, r24
+	//set indexing variable i to zero
+	int i = 0;
+
+	//iterate over array
+	while(a[i]){
+ 1ce:	88 81       	ld	r24, Y
+ 1d0:	88 23       	and	r24, r24
+ 1d2:	29 f0       	breq	.+10     	; 0x1de <transmitString+0x16>
+ 1d4:	21 96       	adiw	r28, 0x01	; 1
+		transmit(a[i]);
+ 1d6:	f0 df       	rcall	.-32     	; 0x1b8 <transmit>
+void transmitString(char *a){
+	//set indexing variable i to zero
+	int i = 0;
+
+	//iterate over array
+	while(a[i]){
+ 1d8:	89 91       	ld	r24, Y+
+ 1da:	81 11       	cpse	r24, r1
+ 1dc:	fc cf       	rjmp	.-8      	; 0x1d6 <transmitString+0xe>
+		transmit(a[i]);
+		i = i+1;
+	}
+}
+ 1de:	df 91       	pop	r29
+ 1e0:	cf 91       	pop	r28
+ 1e2:	08 95       	ret
+
+000001e4 <USART_init>:
+	UDR0 = a;
+}
+
+//This function initializes the USART in the uController
+void USART_init(unsigned int ubrr){
+	UBRR0H = (unsigned char)(ubrr>>8);
+ 1e4:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7e00c5>
+	UBRR0L = (unsigned char)ubrr;
+ 1e8:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7e00c4>
+	UCSR0B = (1<<RXEN0)|(1<<TXEN0);
+ 1ec:	88 e1       	ldi	r24, 0x18	; 24
+ 1ee:	80 93 c1 00 	sts	0x00C1, r24	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7e00c1>
+	UCSR0C = (3<<UCSZ00);
+ 1f2:	86 e0       	ldi	r24, 0x06	; 6
+ 1f4:	80 93 c2 00 	sts	0x00C2, r24	; 0x8000c2 <__TEXT_REGION_LENGTH__+0x7e00c2>
+ 1f8:	08 95       	ret
+
+000001fa <main>:
+void transmitString(char *a);
+//prototype for USART initialization function
+void USART_init(unsigned int ubrr);
+
+int main(void){
+	DDRD &= ~(0xF0);
+ 1fa:	8a b1       	in	r24, 0x0a	; 10
+ 1fc:	8f 70       	andi	r24, 0x0F	; 15
+ 1fe:	8a b9       	out	0x0a, r24	; 10
+	PORTD |= (0xF0);
+ 200:	8b b1       	in	r24, 0x0b	; 11
+ 202:	80 6f       	ori	r24, 0xF0	; 240
+ 204:	8b b9       	out	0x0b, r24	; 11
+
+	DDRB &= ~(0xF0);
+ 206:	84 b1       	in	r24, 0x04	; 4
+ 208:	8f 70       	andi	r24, 0x0F	; 15
+ 20a:	84 b9       	out	0x04, r24	; 4
+	PORTB &= ~(0xF0);
+ 20c:	85 b1       	in	r24, 0x05	; 5
+ 20e:	8f 70       	andi	r24, 0x0F	; 15
+ 210:	85 b9       	out	0x05, r24	; 5
+
+	DDRB |= 1<<DDRB5;
+ 212:	25 9a       	sbi	0x04, 5	; 4
+	//TCCR1B &= ~(1 << CS12);
+
+	
+	
+	//Set LED ports as output
+	DDRC |= (1 << DDRC3 | 1 << DDRC4 | 1 << DDRC5);
+ 214:	87 b1       	in	r24, 0x07	; 7
+ 216:	88 63       	ori	r24, 0x38	; 56
+ 218:	87 b9       	out	0x07, r24	; 7
+	USART_init(MYUBRR);
+ 21a:	87 e6       	ldi	r24, 0x67	; 103
+ 21c:	90 e0       	ldi	r25, 0x00	; 0
+ 21e:	e2 df       	rcall	.-60     	; 0x1e4 <USART_init>
+			if(key){
+				currentState = 3;
+			}
+		}else{	//"unlockedNewPassword"
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer));
+ 220:	c6 e1       	ldi	r28, 0x16	; 22
+ 222:	d2 e0       	ldi	r29, 0x02	; 2
+			transmitString("\r\nEnter New Passcode:\r\n");
+			PORTC &= ~(1 << PORTC3);
+			PORTC &= ~(1 << PORTC4);
+			PORTC |= (1 << PORTC5);
+
+			int i = 0;
+ 224:	e1 2c       	mov	r14, r1
+ 226:	f1 2c       	mov	r15, r1
+					_delay_ms(400);
+				}
+				strncpy(password, passwordBuffer, PassCodeLength);
+			}else{
+				transmitString("Passcode has been discarded.\r\n");
+				currentState = 2;
+ 228:	68 94       	set
+ 22a:	cc 24       	eor	r12, r12
+ 22c:	c1 f8       	bld	r12, 1
+ 22e:	d1 2c       	mov	r13, r1
+				key = keyArray[readKey()];
+			}while(!key);
+
+			if(key == '#'){
+				transmitString("New passcode set!\r\n");
+				currentState = 0;
+ 230:	0f 2e       	mov	r0, r31
+ 232:	f5 e0       	ldi	r31, 0x05	; 5
+ 234:	6f 2e       	mov	r6, r31
+ 236:	f0 2d       	mov	r31, r0
+ 238:	71 2c       	mov	r7, r1
+			PORTC &= ~(1 << PORTC3);
+			PORTC &= ~(1 << PORTC5);
+			PORTC |= (1 << PORTC4);
+			key = keyArray[readKey()];
+			if(key){
+				currentState = 3;
+ 23a:	0f 2e       	mov	r0, r31
+ 23c:	f3 e0       	ldi	r31, 0x03	; 3
+ 23e:	af 2e       	mov	r10, r31
+ 240:	b1 2c       	mov	r11, r1
+ 242:	f0 2d       	mov	r31, r0
+ 244:	88 24       	eor	r8, r8
+ 246:	83 94       	inc	r8
+ 248:	91 2c       	mov	r9, r1
+			//Compare to actual Password
+			int j;
+			int correct = 1;
+			for(j = 0; j < PassCodeLength; j++){
+				if(password[j]!=passwordBuffer[j]){
+					correct = 0;
+ 24a:	4e 2c       	mov	r4, r14
+ 24c:	5f 2c       	mov	r5, r15
+	DDRC |= (1 << DDRC3 | 1 << DDRC4 | 1 << DDRC5);
+	USART_init(MYUBRR);
+	char key;
+
+	while(1){
+		if(States[currentState]=="idleLocked"){
+ 24e:	e0 91 04 01 	lds	r30, 0x0104	; 0x800104 <currentState>
+ 252:	f0 91 05 01 	lds	r31, 0x0105	; 0x800105 <currentState+0x1>
+ 256:	ee 0f       	add	r30, r30
+ 258:	ff 1f       	adc	r31, r31
+ 25a:	e5 5f       	subi	r30, 0xF5	; 245
+ 25c:	fd 4f       	sbci	r31, 0xFD	; 253
+ 25e:	80 81       	ld	r24, Z
+ 260:	91 81       	ldd	r25, Z+1	; 0x01
+ 262:	86 50       	subi	r24, 0x06	; 6
+ 264:	91 40       	sbci	r25, 0x01	; 1
+ 266:	99 f4       	brne	.+38     	; 0x28e <main+0x94>
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer));
+ 268:	18 82       	st	Y, r1
+ 26a:	19 82       	std	Y+1, r1	; 0x01
+ 26c:	1a 82       	std	Y+2, r1	; 0x02
+ 26e:	1b 82       	std	Y+3, r1	; 0x03
+
+			PORTC &= ~(1 << PORTC3);
+ 270:	43 98       	cbi	0x08, 3	; 8
+			PORTC &= ~(1 << PORTC4);
+ 272:	44 98       	cbi	0x08, 4	; 8
+			PORTC &= ~(1 << PORTC5);
+ 274:	45 98       	cbi	0x08, 5	; 8
+			
+			key = keyArray[readKey()];
+ 276:	3a df       	rcall	.-396    	; 0xec <readKey>
+ 278:	8f 5e       	subi	r24, 0xEF	; 239
+ 27a:	9e 4f       	sbci	r25, 0xFE	; 254
+			if(key){
+ 27c:	fc 01       	movw	r30, r24
+ 27e:	80 81       	ld	r24, Z
+ 280:	88 23       	and	r24, r24
+ 282:	29 f3       	breq	.-54     	; 0x24e <main+0x54>
+				currentState = 1;
+ 284:	90 92 05 01 	sts	0x0105, r9	; 0x800105 <currentState+0x1>
+ 288:	80 92 04 01 	sts	0x0104, r8	; 0x800104 <currentState>
+ 28c:	e0 cf       	rjmp	.-64     	; 0x24e <main+0x54>
+			}
+		}else if(States[currentState]=="lockedAttempt"){
+ 28e:	e0 91 04 01 	lds	r30, 0x0104	; 0x800104 <currentState>
+ 292:	f0 91 05 01 	lds	r31, 0x0105	; 0x800105 <currentState+0x1>
+ 296:	ee 0f       	add	r30, r30
+ 298:	ff 1f       	adc	r31, r31
+ 29a:	e5 5f       	subi	r30, 0xF5	; 245
+ 29c:	fd 4f       	sbci	r31, 0xFD	; 253
+ 29e:	80 81       	ld	r24, Z
+ 2a0:	91 81       	ldd	r25, Z+1	; 0x01
+ 2a2:	82 52       	subi	r24, 0x22	; 34
+ 2a4:	91 40       	sbci	r25, 0x01	; 1
+ 2a6:	09 f0       	breq	.+2      	; 0x2aa <main+0xb0>
+ 2a8:	5f c0       	rjmp	.+190    	; 0x368 <main+0x16e>
+			//Start buffering attempt, turn yellow LED on
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer));
+ 2aa:	18 82       	st	Y, r1
+ 2ac:	19 82       	std	Y+1, r1	; 0x01
+ 2ae:	1a 82       	std	Y+2, r1	; 0x02
+ 2b0:	1b 82       	std	Y+3, r1	; 0x03
+
+			transmitString("Enter Passcode:\r\n");
+ 2b2:	80 e3       	ldi	r24, 0x30	; 48
+ 2b4:	91 e0       	ldi	r25, 0x01	; 1
+ 2b6:	88 df       	rcall	.-240    	; 0x1c8 <transmitString>
+			PORTC &= ~(1 << PORTC3);
+ 2b8:	43 98       	cbi	0x08, 3	; 8
+			PORTC &= ~(1 << PORTC4);
+ 2ba:	44 98       	cbi	0x08, 4	; 8
+			PORTC |= (1 << PORTC5);
+ 2bc:	45 9a       	sbi	0x08, 5	; 8
+			int i = 0;
+ 2be:	87 01       	movw	r16, r14
+			while(strlen(passwordBuffer) < PassCodeLength){
+ 2c0:	0e c0       	rjmp	.+28     	; 0x2de <main+0xe4>
+				//while(i < 4){
+				key = keyArray[readKey()];
+ 2c2:	14 df       	rcall	.-472    	; 0xec <readKey>
+ 2c4:	8f 5e       	subi	r24, 0xEF	; 239
+ 2c6:	9e 4f       	sbci	r25, 0xFE	; 254
+ 2c8:	fc 01       	movw	r30, r24
+ 2ca:	80 81       	ld	r24, Z
+				if(key){
+ 2cc:	88 23       	and	r24, r24
+ 2ce:	39 f0       	breq	.+14     	; 0x2de <main+0xe4>
+					passwordBuffer[i]= key;
+ 2d0:	f8 01       	movw	r30, r16
+ 2d2:	ea 5e       	subi	r30, 0xEA	; 234
+ 2d4:	fd 4f       	sbci	r31, 0xFD	; 253
+ 2d6:	80 83       	st	Z, r24
+					transmit(key);
+ 2d8:	6f df       	rcall	.-290    	; 0x1b8 <transmit>
+					i = i + 1;
+ 2da:	0f 5f       	subi	r16, 0xFF	; 255
+ 2dc:	1f 4f       	sbci	r17, 0xFF	; 255
+			transmitString("Enter Passcode:\r\n");
+			PORTC &= ~(1 << PORTC3);
+			PORTC &= ~(1 << PORTC4);
+			PORTC |= (1 << PORTC5);
+			int i = 0;
+			while(strlen(passwordBuffer) < PassCodeLength){
+ 2de:	fe 01       	movw	r30, r28
+ 2e0:	01 90       	ld	r0, Z+
+ 2e2:	00 20       	and	r0, r0
+ 2e4:	e9 f7       	brne	.-6      	; 0x2e0 <main+0xe6>
+ 2e6:	31 97       	sbiw	r30, 0x01	; 1
+ 2e8:	e6 51       	subi	r30, 0x16	; 22
+ 2ea:	f2 40       	sbci	r31, 0x02	; 2
+ 2ec:	34 97       	sbiw	r30, 0x04	; 4
+ 2ee:	48 f3       	brcs	.-46     	; 0x2c2 <main+0xc8>
+ 2f0:	94 01       	movw	r18, r8
+ 2f2:	c7 01       	movw	r24, r14
+
+			//Compare to actual Password
+			int j;
+			int correct = 1;
+			for(j = 0; j < PassCodeLength; j++){
+				if(password[j]!=passwordBuffer[j]){
+ 2f4:	fc 01       	movw	r30, r24
+ 2f6:	e0 50       	subi	r30, 0x00	; 0
+ 2f8:	ff 4f       	sbci	r31, 0xFF	; 255
+ 2fa:	50 81       	ld	r21, Z
+ 2fc:	fc 01       	movw	r30, r24
+ 2fe:	ea 5e       	subi	r30, 0xEA	; 234
+ 300:	fd 4f       	sbci	r31, 0xFD	; 253
+ 302:	40 81       	ld	r20, Z
+ 304:	54 17       	cp	r21, r20
+ 306:	11 f0       	breq	.+4      	; 0x30c <main+0x112>
+					correct = 0;
+ 308:	24 2d       	mov	r18, r4
+ 30a:	35 2d       	mov	r19, r5
+			}
+
+			//Compare to actual Password
+			int j;
+			int correct = 1;
+			for(j = 0; j < PassCodeLength; j++){
+ 30c:	01 96       	adiw	r24, 0x01	; 1
+ 30e:	84 30       	cpi	r24, 0x04	; 4
+ 310:	91 05       	cpc	r25, r1
+ 312:	81 f7       	brne	.-32     	; 0x2f4 <main+0xfa>
+				if(password[j]!=passwordBuffer[j]){
+					correct = 0;
+				}
+			}
+			if(correct){
+ 314:	23 2b       	or	r18, r19
+ 316:	41 f0       	breq	.+16     	; 0x328 <main+0x12e>
+				transmitString("\r\nCorrect!\r\n");
+ 318:	82 e4       	ldi	r24, 0x42	; 66
+ 31a:	91 e0       	ldi	r25, 0x01	; 1
+ 31c:	55 df       	rcall	.-342    	; 0x1c8 <transmitString>
+				currentState = 2;
+ 31e:	d0 92 05 01 	sts	0x0105, r13	; 0x800105 <currentState+0x1>
+ 322:	c0 92 04 01 	sts	0x0104, r12	; 0x800104 <currentState>
+ 326:	1b c0       	rjmp	.+54     	; 0x35e <main+0x164>
+			}else{
+				transmitString("\r\nIncorrect passcode\r\n");
+ 328:	8f e4       	ldi	r24, 0x4F	; 79
+ 32a:	91 e0       	ldi	r25, 0x01	; 1
+ 32c:	4d df       	rcall	.-358    	; 0x1c8 <transmitString>
+ 32e:	86 2d       	mov	r24, r6
+ 330:	97 2d       	mov	r25, r7
+				int c;
+				for(c = 0; c < 5; c++){
+					PORTC |= 1<<PORTC3;
+ 332:	43 9a       	sbi	0x08, 3	; 8
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 334:	ff ef       	ldi	r31, 0xFF	; 255
+ 336:	27 e8       	ldi	r18, 0x87	; 135
+ 338:	33 e1       	ldi	r19, 0x13	; 19
+ 33a:	f1 50       	subi	r31, 0x01	; 1
+ 33c:	20 40       	sbci	r18, 0x00	; 0
+ 33e:	30 40       	sbci	r19, 0x00	; 0
+ 340:	e1 f7       	brne	.-8      	; 0x33a <main+0x140>
+ 342:	00 c0       	rjmp	.+0      	; 0x344 <main+0x14a>
+ 344:	00 00       	nop
+					_delay_ms(400);
+					PORTC &= ~(1<<PORTC3);
+ 346:	43 98       	cbi	0x08, 3	; 8
+ 348:	4f ef       	ldi	r20, 0xFF	; 255
+ 34a:	e7 e8       	ldi	r30, 0x87	; 135
+ 34c:	f3 e1       	ldi	r31, 0x13	; 19
+ 34e:	41 50       	subi	r20, 0x01	; 1
+ 350:	e0 40       	sbci	r30, 0x00	; 0
+ 352:	f0 40       	sbci	r31, 0x00	; 0
+ 354:	e1 f7       	brne	.-8      	; 0x34e <main+0x154>
+ 356:	00 c0       	rjmp	.+0      	; 0x358 <main+0x15e>
+ 358:	00 00       	nop
+ 35a:	01 97       	sbiw	r24, 0x01	; 1
+				transmitString("\r\nCorrect!\r\n");
+				currentState = 2;
+			}else{
+				transmitString("\r\nIncorrect passcode\r\n");
+				int c;
+				for(c = 0; c < 5; c++){
+ 35c:	51 f7       	brne	.-44     	; 0x332 <main+0x138>
+					PORTC &= ~(1<<PORTC3);
+					_delay_ms(400);
+				}
+			}
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer)); // Clear buffer
+ 35e:	18 82       	st	Y, r1
+ 360:	19 82       	std	Y+1, r1	; 0x01
+ 362:	1a 82       	std	Y+2, r1	; 0x02
+ 364:	1b 82       	std	Y+3, r1	; 0x03
+ 366:	73 cf       	rjmp	.-282    	; 0x24e <main+0x54>
+		}else if(States[currentState]=="idleUnlocked"){
+ 368:	e0 91 04 01 	lds	r30, 0x0104	; 0x800104 <currentState>
+ 36c:	f0 91 05 01 	lds	r31, 0x0105	; 0x800105 <currentState+0x1>
+ 370:	ee 0f       	add	r30, r30
+ 372:	ff 1f       	adc	r31, r31
+ 374:	e5 5f       	subi	r30, 0xF5	; 245
+ 376:	fd 4f       	sbci	r31, 0xFD	; 253
+ 378:	80 81       	ld	r24, Z
+ 37a:	91 81       	ldd	r25, Z+1	; 0x01
+ 37c:	86 56       	subi	r24, 0x66	; 102
+ 37e:	91 40       	sbci	r25, 0x01	; 1
+ 380:	a1 f4       	brne	.+40     	; 0x3aa <main+0x1b0>
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer));
+ 382:	18 82       	st	Y, r1
+ 384:	19 82       	std	Y+1, r1	; 0x01
+ 386:	1a 82       	std	Y+2, r1	; 0x02
+ 388:	1b 82       	std	Y+3, r1	; 0x03
+
+			PORTC &= ~(1 << PORTC3);
+ 38a:	43 98       	cbi	0x08, 3	; 8
+			PORTC &= ~(1 << PORTC5);
+ 38c:	45 98       	cbi	0x08, 5	; 8
+			PORTC |= (1 << PORTC4);
+ 38e:	44 9a       	sbi	0x08, 4	; 8
+			key = keyArray[readKey()];
+ 390:	ad de       	rcall	.-678    	; 0xec <readKey>
+ 392:	8f 5e       	subi	r24, 0xEF	; 239
+ 394:	9e 4f       	sbci	r25, 0xFE	; 254
+			if(key){
+ 396:	fc 01       	movw	r30, r24
+ 398:	80 81       	ld	r24, Z
+ 39a:	88 23       	and	r24, r24
+ 39c:	09 f4       	brne	.+2      	; 0x3a0 <main+0x1a6>
+ 39e:	57 cf       	rjmp	.-338    	; 0x24e <main+0x54>
+				currentState = 3;
+ 3a0:	b0 92 05 01 	sts	0x0105, r11	; 0x800105 <currentState+0x1>
+ 3a4:	a0 92 04 01 	sts	0x0104, r10	; 0x800104 <currentState>
+ 3a8:	52 cf       	rjmp	.-348    	; 0x24e <main+0x54>
+			}
+		}else{	//"unlockedNewPassword"
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer));
+ 3aa:	18 82       	st	Y, r1
+ 3ac:	19 82       	std	Y+1, r1	; 0x01
+ 3ae:	1a 82       	std	Y+2, r1	; 0x02
+ 3b0:	1b 82       	std	Y+3, r1	; 0x03
+			transmitString("\r\nEnter New Passcode:\r\n");
+ 3b2:	83 e7       	ldi	r24, 0x73	; 115
+ 3b4:	91 e0       	ldi	r25, 0x01	; 1
+ 3b6:	08 df       	rcall	.-496    	; 0x1c8 <transmitString>
+			PORTC &= ~(1 << PORTC3);
+ 3b8:	43 98       	cbi	0x08, 3	; 8
+			PORTC &= ~(1 << PORTC4);
+ 3ba:	44 98       	cbi	0x08, 4	; 8
+			PORTC |= (1 << PORTC5);
+ 3bc:	45 9a       	sbi	0x08, 5	; 8
+
+			int i = 0;
+ 3be:	87 01       	movw	r16, r14
+			while(strlen(passwordBuffer) < PassCodeLength){
+ 3c0:	0e c0       	rjmp	.+28     	; 0x3de <main+0x1e4>
+				//while(i < 4){
+				key = keyArray[readKey()];
+ 3c2:	94 de       	rcall	.-728    	; 0xec <readKey>
+ 3c4:	8f 5e       	subi	r24, 0xEF	; 239
+ 3c6:	9e 4f       	sbci	r25, 0xFE	; 254
+ 3c8:	fc 01       	movw	r30, r24
+ 3ca:	80 81       	ld	r24, Z
+				if(key){
+ 3cc:	88 23       	and	r24, r24
+ 3ce:	39 f0       	breq	.+14     	; 0x3de <main+0x1e4>
+					passwordBuffer[i]= key;
+ 3d0:	f8 01       	movw	r30, r16
+ 3d2:	ea 5e       	subi	r30, 0xEA	; 234
+ 3d4:	fd 4f       	sbci	r31, 0xFD	; 253
+ 3d6:	80 83       	st	Z, r24
+					transmit(key);
+ 3d8:	ef de       	rcall	.-546    	; 0x1b8 <transmit>
+					i = i + 1;
+ 3da:	0f 5f       	subi	r16, 0xFF	; 255
+ 3dc:	1f 4f       	sbci	r17, 0xFF	; 255
+			PORTC &= ~(1 << PORTC3);
+			PORTC &= ~(1 << PORTC4);
+			PORTC |= (1 << PORTC5);
+
+			int i = 0;
+			while(strlen(passwordBuffer) < PassCodeLength){
+ 3de:	fe 01       	movw	r30, r28
+ 3e0:	01 90       	ld	r0, Z+
+ 3e2:	00 20       	and	r0, r0
+ 3e4:	e9 f7       	brne	.-6      	; 0x3e0 <main+0x1e6>
+ 3e6:	31 97       	sbiw	r30, 0x01	; 1
+ 3e8:	e6 51       	subi	r30, 0x16	; 22
+ 3ea:	f2 40       	sbci	r31, 0x02	; 2
+ 3ec:	34 97       	sbiw	r30, 0x04	; 4
+ 3ee:	48 f3       	brcs	.-46     	; 0x3c2 <main+0x1c8>
+					passwordBuffer[i]= key;
+					transmit(key);
+					i = i + 1;
+				}
+			}
+			transmitString("\r\n");
+ 3f0:	8c e4       	ldi	r24, 0x4C	; 76
+ 3f2:	91 e0       	ldi	r25, 0x01	; 1
+ 3f4:	e9 de       	rcall	.-558    	; 0x1c8 <transmitString>
+			transmitString("New passcode selected: ");
+ 3f6:	8b e8       	ldi	r24, 0x8B	; 139
+ 3f8:	91 e0       	ldi	r25, 0x01	; 1
+ 3fa:	e6 de       	rcall	.-564    	; 0x1c8 <transmitString>
+			transmitString(passwordBuffer);
+ 3fc:	ce 01       	movw	r24, r28
+ 3fe:	e4 de       	rcall	.-568    	; 0x1c8 <transmitString>
+			transmitString("\r\nPress # to set new passcode.\r\n");
+ 400:	83 ea       	ldi	r24, 0xA3	; 163
+ 402:	91 e0       	ldi	r25, 0x01	; 1
+ 404:	e1 de       	rcall	.-574    	; 0x1c8 <transmitString>
+
+			do{
+				key = keyArray[readKey()];
+ 406:	72 de       	rcall	.-796    	; 0xec <readKey>
+ 408:	8f 5e       	subi	r24, 0xEF	; 239
+ 40a:	9e 4f       	sbci	r25, 0xFE	; 254
+ 40c:	fc 01       	movw	r30, r24
+ 40e:	80 81       	ld	r24, Z
+			}while(!key);
+ 410:	88 23       	and	r24, r24
+ 412:	c9 f3       	breq	.-14     	; 0x406 <__FUSE_REGION_LENGTH__+0x6>
+
+			if(key == '#'){
+ 414:	83 32       	cpi	r24, 0x23	; 35
+ 416:	51 f5       	brne	.+84     	; 0x46c <__FUSE_REGION_LENGTH__+0x6c>
+				transmitString("New passcode set!\r\n");
+ 418:	84 ec       	ldi	r24, 0xC4	; 196
+ 41a:	91 e0       	ldi	r25, 0x01	; 1
+ 41c:	d5 de       	rcall	.-598    	; 0x1c8 <transmitString>
+				currentState = 0;
+ 41e:	f0 92 05 01 	sts	0x0105, r15	; 0x800105 <currentState+0x1>
+ 422:	e0 92 04 01 	sts	0x0104, r14	; 0x800104 <currentState>
+ 426:	86 2d       	mov	r24, r6
+ 428:	97 2d       	mov	r25, r7
+				int c;
+				for(c = 0; c < 5; c++){
+					PORTC |= 1<<PORTC3;
+ 42a:	43 9a       	sbi	0x08, 3	; 8
+					PORTC |= 1<<PORTC4;
+ 42c:	44 9a       	sbi	0x08, 4	; 8
+					PORTC |= 1<<PORTC5;
+ 42e:	45 9a       	sbi	0x08, 5	; 8
+ 430:	ff ef       	ldi	r31, 0xFF	; 255
+ 432:	27 e8       	ldi	r18, 0x87	; 135
+ 434:	33 e1       	ldi	r19, 0x13	; 19
+ 436:	f1 50       	subi	r31, 0x01	; 1
+ 438:	20 40       	sbci	r18, 0x00	; 0
+ 43a:	30 40       	sbci	r19, 0x00	; 0
+ 43c:	e1 f7       	brne	.-8      	; 0x436 <__FUSE_REGION_LENGTH__+0x36>
+ 43e:	00 c0       	rjmp	.+0      	; 0x440 <__FUSE_REGION_LENGTH__+0x40>
+ 440:	00 00       	nop
+					_delay_ms(400);
+					PORTC &= ~(1<<PORTC3);
+ 442:	43 98       	cbi	0x08, 3	; 8
+					PORTC &= ~(1<<PORTC4);
+ 444:	44 98       	cbi	0x08, 4	; 8
+					PORTC &= ~(1<<PORTC5);
+ 446:	45 98       	cbi	0x08, 5	; 8
+ 448:	4f ef       	ldi	r20, 0xFF	; 255
+ 44a:	e7 e8       	ldi	r30, 0x87	; 135
+ 44c:	f3 e1       	ldi	r31, 0x13	; 19
+ 44e:	41 50       	subi	r20, 0x01	; 1
+ 450:	e0 40       	sbci	r30, 0x00	; 0
+ 452:	f0 40       	sbci	r31, 0x00	; 0
+ 454:	e1 f7       	brne	.-8      	; 0x44e <__FUSE_REGION_LENGTH__+0x4e>
+ 456:	00 c0       	rjmp	.+0      	; 0x458 <__FUSE_REGION_LENGTH__+0x58>
+ 458:	00 00       	nop
+ 45a:	01 97       	sbiw	r24, 0x01	; 1
+
+			if(key == '#'){
+				transmitString("New passcode set!\r\n");
+				currentState = 0;
+				int c;
+				for(c = 0; c < 5; c++){
+ 45c:	31 f7       	brne	.-52     	; 0x42a <__FUSE_REGION_LENGTH__+0x2a>
+					PORTC &= ~(1<<PORTC3);
+					PORTC &= ~(1<<PORTC4);
+					PORTC &= ~(1<<PORTC5);
+					_delay_ms(400);
+				}
+				strncpy(password, passwordBuffer, PassCodeLength);
+ 45e:	44 e0       	ldi	r20, 0x04	; 4
+ 460:	50 e0       	ldi	r21, 0x00	; 0
+ 462:	be 01       	movw	r22, r28
+ 464:	80 e0       	ldi	r24, 0x00	; 0
+ 466:	91 e0       	ldi	r25, 0x01	; 1
+ 468:	0d d0       	rcall	.+26     	; 0x484 <strncpy>
+ 46a:	07 c0       	rjmp	.+14     	; 0x47a <__FUSE_REGION_LENGTH__+0x7a>
+			}else{
+				transmitString("Passcode has been discarded.\r\n");
+ 46c:	88 ed       	ldi	r24, 0xD8	; 216
+ 46e:	91 e0       	ldi	r25, 0x01	; 1
+ 470:	ab de       	rcall	.-682    	; 0x1c8 <transmitString>
+				currentState = 2;
+ 472:	d0 92 05 01 	sts	0x0105, r13	; 0x800105 <currentState+0x1>
+ 476:	c0 92 04 01 	sts	0x0104, r12	; 0x800104 <currentState>
+			}
+			key = '\0';
+			memset(&passwordBuffer[0], 0, sizeof(passwordBuffer));
+ 47a:	18 82       	st	Y, r1
+ 47c:	19 82       	std	Y+1, r1	; 0x01
+ 47e:	1a 82       	std	Y+2, r1	; 0x02
+ 480:	1b 82       	std	Y+3, r1	; 0x03
+ 482:	e5 ce       	rjmp	.-566    	; 0x24e <main+0x54>
+
+00000484 <strncpy>:
+ 484:	fb 01       	movw	r30, r22
+ 486:	dc 01       	movw	r26, r24
+ 488:	41 50       	subi	r20, 0x01	; 1
+ 48a:	50 40       	sbci	r21, 0x00	; 0
+ 48c:	48 f0       	brcs	.+18     	; 0x4a0 <strncpy+0x1c>
+ 48e:	01 90       	ld	r0, Z+
+ 490:	0d 92       	st	X+, r0
+ 492:	00 20       	and	r0, r0
+ 494:	c9 f7       	brne	.-14     	; 0x488 <strncpy+0x4>
+ 496:	01 c0       	rjmp	.+2      	; 0x49a <strncpy+0x16>
+ 498:	1d 92       	st	X+, r1
+ 49a:	41 50       	subi	r20, 0x01	; 1
+ 49c:	50 40       	sbci	r21, 0x00	; 0
+ 49e:	e0 f7       	brcc	.-8      	; 0x498 <strncpy+0x14>
+ 4a0:	08 95       	ret
+
+000004a2 <_exit>:
+ 4a2:	f8 94       	cli
+
+000004a4 <__stop_program>:
+ 4a4:	ff cf       	rjmp	.-2      	; 0x4a4 <__stop_program>
